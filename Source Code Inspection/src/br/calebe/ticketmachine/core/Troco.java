@@ -6,7 +6,7 @@ import java.util.Iterator;
  *
  * @author Calebe de Paula Bianchini
  */
-class Troco {
+public class Troco {
 
     protected PapelMoeda[] papeisMoeda;
 
@@ -54,9 +54,9 @@ class Troco {
         return new TrocoIterator(this);
     }
 
-    class TrocoIterator implements Iterator<PapelMoeda> {
+    static class TrocoIterator implements Iterator<PapelMoeda> {
 
-        protected Troco troco;
+        public Troco troco;
 
         public TrocoIterator(Troco troco) {
             this.troco = troco;
