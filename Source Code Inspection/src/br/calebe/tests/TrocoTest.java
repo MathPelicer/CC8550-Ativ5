@@ -78,6 +78,30 @@ public class TrocoTest {
         Assert.assertEquals(bankNotes, expectedChange);
     }
 
+    @Test
+    public void checkInvalidBankNote() {
+        int valor = 1;
+        Troco troco = new Troco(valor);
+        var trocoIterator = troco.getIterator();
+
+        ArrayList<Integer> bankNotes = new ArrayList<>();
+
+        while (trocoIterator.hasNext()) {
+            PapelMoeda papelMoeda = trocoIterator.next();
+            bankNotes.add(papelMoeda.getQuantidade());
+        }
+
+        ArrayList<Integer> expectedChange = new ArrayList<>();
+        expectedChange.add(0);
+        expectedChange.add(0);
+        expectedChange.add(0);
+        expectedChange.add(0);
+        expectedChange.add(0);
+        expectedChange.add(0);
+
+        Assert.assertEquals(bankNotes, expectedChange);
+    }
+
     // Todo: test all bank notes
     // same way as tested above to 100 bank note
 
