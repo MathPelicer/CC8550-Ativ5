@@ -54,16 +54,46 @@ public class TicketMachineTest {
         TicketMachine ticketMachine = new TicketMachine(valor);
         String printTicketMachine = "";
         try {
-            ticketMachine.inserir(30);
+            ticketMachine.inserir(20);
             printTicketMachine = ticketMachine.imprimir();
         } catch (Exception e) {
 
         }
 
         String result = "*****************\n";
-        result += "*** R$ " + "20,00 ****\n";
+        result += "*** R$ " + "10,00 ****\n";
         result += "*****************\n";
 
         Assert.assertEquals(result, printTicketMachine);
+    }
+
+    @Test
+    public void checkGetTrocoSuccess() {
+        int valor = 10;
+        TicketMachine ticketMachine = new TicketMachine(valor);
+
+        try {
+            ticketMachine.inserir(20);
+        } catch (PapelMoedaInvalidaException e) {
+            System.out.println(e.getMessage());
+        }
+
+        var troco = ticketMachine.getTroco();
+        Assert.assertEquals(10, troco);
+    }
+
+    @Test
+    public void checkGetTrocoFail() {
+        int valor = 9;
+        TicketMachine ticketMachine = new TicketMachine(valor);
+
+        try {
+            ticketMachine.inserir(20);
+        } catch (PapelMoedaInvalidaException e) {
+            System.out.println(e.getMessage());
+        }
+
+        var troco = ticketMachine.getTroco();
+        Assert.assertEquals(11, troco);
     }
 }
