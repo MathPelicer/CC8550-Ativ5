@@ -5,6 +5,7 @@ import org.junit.Test;
 
 import ticketmachine.core.TicketMachine;
 import ticketmachine.exception.PapelMoedaInvalidaException;
+import ticketmachine.exception.SaldoInsuficienteException;
 
 public class TicketMachineTest {
 
@@ -65,6 +66,27 @@ public class TicketMachineTest {
         result += "*****************\n";
 
         Assert.assertEquals(result, printTicketMachine);
+    }
+
+    @Test
+    public void checkImprimirException() {
+        int valor = 10;
+        String message = "";
+        TicketMachine ticketMachine = new TicketMachine(valor);
+
+        try {
+            ticketMachine.inserir(5);
+        } catch (PapelMoedaInvalidaException e) {
+            message = e.getMessage();
+        }
+
+        try {
+            ticketMachine.imprimir();
+        } catch (SaldoInsuficienteException e) {
+            message = e.getMessage();
+        }
+
+        Assert.assertEquals(message, "Saldo Insuficiente");
     }
 
     @Test
