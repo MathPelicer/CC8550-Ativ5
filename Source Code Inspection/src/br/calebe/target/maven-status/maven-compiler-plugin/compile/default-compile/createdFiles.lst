@@ -1,0 +1,6 @@
+ticketmachine/exception/SaldoInsuficienteException.class
+ticketmachine/core/Troco$TrocoIterator.class
+ticketmachine/core/TicketMachine.class
+ticketmachine/exception/PapelMoedaInvalidaException.class
+ticketmachine/core/Troco.class
+ticketmachine/core/PapelMoeda.class

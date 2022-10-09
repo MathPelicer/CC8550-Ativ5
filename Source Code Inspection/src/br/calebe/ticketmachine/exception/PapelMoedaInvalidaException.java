@@ -1,4 +1,4 @@
-package ticketmachine.exception;
+package exception;
 
 /**
  *
