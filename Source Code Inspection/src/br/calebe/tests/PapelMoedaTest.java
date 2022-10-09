@@ -1,9 +1,8 @@
-package tests;
 
 import org.junit.Assert;
 import org.junit.Test;
 
-import ticketmachine.core.PapelMoeda;
+import core.PapelMoeda;
 
 public class PapelMoedaTest {
     @Test

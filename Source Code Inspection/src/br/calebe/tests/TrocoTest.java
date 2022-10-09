@@ -1,12 +1,11 @@
-package tests;
-
 import java.util.ArrayList;
+import java.util.Iterator;
 
 import org.junit.Assert;
 import org.junit.Test;
 
-import ticketmachine.core.PapelMoeda;
-import ticketmachine.core.Troco;
+import core.PapelMoeda;
+import core.Troco;
 
 public class TrocoTest {
     @Test
@@ -23,7 +22,7 @@ public class TrocoTest {
         int valor = 1234;
 
         Troco troco = new Troco(valor);
-        var trocoIterator = troco.getIterator();
+        Iterator<PapelMoeda> trocoIterator = troco.getIterator();
 
         Assert.assertNotNull(trocoIterator);
     }
@@ -33,7 +32,7 @@ public class TrocoTest {
         int valor = 1287;
 
         Troco troco = new Troco(valor);
-        var trocoIterator = troco.getIterator();
+        Iterator<PapelMoeda> trocoIterator = troco.getIterator();
 
         ArrayList<Integer> bankNotes = new ArrayList<>();
 
@@ -58,7 +57,7 @@ public class TrocoTest {
         int valor = 500;
 
         Troco troco = new Troco(valor);
-        var trocoIterator = troco.getIterator();
+        Iterator<PapelMoeda> trocoIterator = troco.getIterator();
 
         ArrayList<Integer> bankNotes = new ArrayList<>();
 
@@ -82,7 +81,7 @@ public class TrocoTest {
     public void checkInvalidBankNote() {
         int valor = 1;
         Troco troco = new Troco(valor);
-        var trocoIterator = troco.getIterator();
+        Iterator<PapelMoeda> trocoIterator = troco.getIterator();
 
         ArrayList<Integer> bankNotes = new ArrayList<>();
 

@@ -1,8 +1,8 @@
-package ticketmachine.core;
+package core;
 
-import ticketmachine.core.Troco.TrocoIterator;
-import ticketmachine.exception.PapelMoedaInvalidaException;
-import ticketmachine.exception.SaldoInsuficienteException;
+import core.Troco.TrocoIterator;
+import exception.PapelMoedaInvalidaException;
+import exception.SaldoInsuficienteException;
 
 /**
  *

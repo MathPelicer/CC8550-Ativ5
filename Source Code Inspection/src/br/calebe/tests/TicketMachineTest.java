@@ -1,11 +1,10 @@
-package tests;
-
 import org.junit.Assert;
 import org.junit.Test;
 
-import ticketmachine.core.TicketMachine;
-import ticketmachine.exception.PapelMoedaInvalidaException;
-import ticketmachine.exception.SaldoInsuficienteException;
+import core.TicketMachine;
+import core.Troco.TrocoIterator;
+import exception.PapelMoedaInvalidaException;
+import exception.SaldoInsuficienteException;
 
 public class TicketMachineTest {
 
@@ -100,7 +99,7 @@ public class TicketMachineTest {
             System.out.println(e.getMessage());
         }
 
-        var troco = ticketMachine.getTroco();
+        TrocoIterator troco = ticketMachine.getTroco();
         Assert.assertEquals(10, troco);
     }
 
@@ -115,7 +114,7 @@ public class TicketMachineTest {
             System.out.println(e.getMessage());
         }
 
-        var troco = ticketMachine.getTroco();
+        TrocoIterator troco = ticketMachine.getTroco();
         Assert.assertEquals(11, troco);
     }
 }
