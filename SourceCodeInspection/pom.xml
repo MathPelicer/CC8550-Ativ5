@@ -36,7 +36,6 @@
   <build>
     <sourceDirectory>./src/br/calebe/ticketmachine</sourceDirectory>
     <testSourceDirectory>./src/br/calebe/tests</testSourceDirectory>
-    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
@@ -93,6 +92,5 @@
           <version>3.0.0</version>
         </plugin>
       </plugins>
-    </pluginManagement>
   </build>
 </project>
