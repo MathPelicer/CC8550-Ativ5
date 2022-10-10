@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="PapelMoedaTest" time="0.027" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TicketMachineTest" time="0.001" tests="7" errors="0" skipped="0" failures="2">
   <properties>
     <property name="java.specification.version" value="19"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\mathe\Documents\FEI\8_semester\tests\CC8550-Ativ5\Source Code Inspection\src\br\calebe\target\test-classes;C:\Users\mathe\Documents\FEI\8_semester\tests\CC8550-Ativ5\Source Code Inspection\src\br\calebe\target\classes;C:\Users\mathe\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\mathe\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.class.path" value="C:\Users\mathe\Documents\FEI\8_semester\tests\CC8550-Ativ5\Source Code Inspection\target\test-classes;C:\Users\mathe\Documents\FEI\8_semester\tests\CC8550-Ativ5\Source Code Inspection\target\classes;C:\Users\mathe\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\mathe\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,9 +15,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="BR"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-19\bin"/>
-    <property name="sun.java.command" value="C:\Users\mathe\AppData\Local\Temp\surefire10797298070981469385\surefirebooter2434533275747207891.jar C:\Users\mathe\AppData\Local\Temp\surefire10797298070981469385 2022-10-09T21-13-28_740-jvmRun1 surefire7953067532504549582tmp surefire_016665829451632524417tmp"/>
+    <property name="sun.java.command" value="C:\Users\mathe\AppData\Local\Temp\surefire7635485883643770903\surefirebooter11636622773497295191.jar C:\Users\mathe\AppData\Local\Temp\surefire7635485883643770903 2022-10-09T21-27-54_444-jvmRun1 surefire12139467350897934353tmp surefire_015099661257051992691tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\mathe\Documents\FEI\8_semester\tests\CC8550-Ativ5\Source Code Inspection\src\br\calebe\target\test-classes;C:\Users\mathe\Documents\FEI\8_semester\tests\CC8550-Ativ5\Source Code Inspection\src\br\calebe\target\classes;C:\Users\mathe\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\mathe\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Users\mathe\Documents\FEI\8_semester\tests\CC8550-Ativ5\Source Code Inspection\target\test-classes;C:\Users\mathe\Documents\FEI\8_semester\tests\CC8550-Ativ5\Source Code Inspection\target\classes;C:\Users\mathe\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\mathe\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\mathe"/>
     <property name="user.language" value="pt"/>
@@ -25,12 +25,12 @@
     <property name="java.version.date" value="2022-09-20"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-19"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="C:\Users\mathe\Documents\FEI\8_semester\tests\CC8550-Ativ5\Source Code Inspection\src\br\calebe"/>
+    <property name="basedir" value="C:\Users\mathe\Documents\FEI\8_semester\tests\CC8550-Ativ5\Source Code Inspection"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\mathe\AppData\Local\Temp\surefire10797298070981469385\surefirebooter2434533275747207891.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\mathe\AppData\Local\Temp\surefire7635485883643770903\surefirebooter11636622773497295191.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="19+36-2238"/>
@@ -45,7 +45,7 @@
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\mathe\AppData\Local\Temp\"/>
     <property name="java.version" value="19"/>
-    <property name="user.dir" value="C:\Users\mathe\Documents\FEI\8_semester\tests\CC8550-Ativ5\Source Code Inspection\src\br\calebe"/>
+    <property name="user.dir" value="C:\Users\mathe\Documents\FEI\8_semester\tests\CC8550-Ativ5\Source Code Inspection"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
@@ -58,7 +58,19 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="63.0"/>
   </properties>
-  <testcase name="checkGetQuantidade" classname="PapelMoedaTest" time="0.003"/>
-  <testcase name="checkSuccessPapelMoedaContructor" classname="PapelMoedaTest" time="0"/>
-  <testcase name="checkGetValor" classname="PapelMoedaTest" time="0.001"/>
+  <testcase name="chackTicketMachineConstructorSuccess" classname="TicketMachineTest" time="0"/>
+  <testcase name="checkInsertBankNoteSuccess" classname="TicketMachineTest" time="0"/>
+  <testcase name="checkImprimirException" classname="TicketMachineTest" time="0"/>
+  <testcase name="checkPrintSuccess" classname="TicketMachineTest" time="0"/>
+  <testcase name="checkInsertBankNoteException" classname="TicketMachineTest" time="0"/>
+  <testcase name="checkGetTrocoSuccess" classname="TicketMachineTest" time="0.001">
+    <failure message="expected:&lt;10&gt; but was:&lt;core.Troco$TrocoIterator@6d00a15d&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<10> but was:<core.Troco$TrocoIterator@6d00a15d>
+	at TicketMachineTest.checkGetTrocoSuccess(TicketMachineTest.java:103)
+]]></failure>
+  </testcase>
+  <testcase name="checkGetTrocoFail" classname="TicketMachineTest" time="0">
+    <failure message="expected:&lt;11&gt; but was:&lt;core.Troco$TrocoIterator@7823a2f9&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<11> but was:<core.Troco$TrocoIterator@7823a2f9>
+	at TicketMachineTest.checkGetTrocoFail(TicketMachineTest.java:118)
+]]></failure>
+  </testcase>
 </testsuite>

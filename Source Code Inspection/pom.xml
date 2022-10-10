@@ -34,8 +34,8 @@
   </dependencies>
 
   <build>
-    <sourceDirectory>./ticketmachine</sourceDirectory>
-    <testSourceDirectory>./tests</testSourceDirectory>
+    <sourceDirectory>./src/br/calebe/ticketmachine</sourceDirectory>
+    <testSourceDirectory>./src/br/calebe/tests</testSourceDirectory>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <plugin>
@@ -50,7 +50,7 @@
             </execution>
           </executions>
           <configuration>
-            <mainClass>Main</mainClass>
+            <mainClass>ticketmachine.Main</mainClass>
           </configuration>
         </plugin>
         <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
