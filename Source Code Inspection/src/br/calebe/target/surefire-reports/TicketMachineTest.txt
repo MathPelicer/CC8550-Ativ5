@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TicketMachineTest
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in TicketMachineTest
-checkGetTrocoSuccess(TicketMachineTest)  Time elapsed: 0 s  <<< FAILURE!
+Tests run: 7, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.001 s <<< FAILURE! - in TicketMachineTest
+checkGetTrocoSuccess(TicketMachineTest)  Time elapsed: 0.001 s  <<< FAILURE!
 java.lang.AssertionError: expected:<10> but was:<core.Troco$TrocoIterator@6d00a15d>
 	at TicketMachineTest.checkGetTrocoSuccess(TicketMachineTest.java:103)
 
