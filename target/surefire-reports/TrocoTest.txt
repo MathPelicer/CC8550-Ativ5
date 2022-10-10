@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: TrocoTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in TrocoTest
+Tests run: 5, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.001 s <<< FAILURE! - in TrocoTest
 checkQuantityOfBankNotesInTroco(TrocoTest)  Time elapsed: 0 s  <<< ERROR!
 java.lang.NullPointerException: Cannot invoke "core.PapelMoeda.getQuantidade()" because "papelMoeda" is null
 	at TrocoTest.checkQuantityOfBankNotesInTroco(TrocoTest.java:41)
