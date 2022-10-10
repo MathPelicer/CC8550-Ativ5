@@ -34,8 +34,8 @@
   </dependencies>
 
   <build>
-    <sourceDirectory>./src/br/calebe/ticketmachine</sourceDirectory>
-    <testSourceDirectory>./src/br/calebe/tests</testSourceDirectory>
+    <sourceDirectory>./src/ticketmachine</sourceDirectory>
+    <testSourceDirectory>./src/tests</testSourceDirectory>
       <plugins>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
